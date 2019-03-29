@@ -2,29 +2,17 @@ const request = require('request');
 require('dotenv').config();
 
 const slackData = {
-  text: "EDITORIAL RELEASE NOTES",
+  text: "A release to Clay just finished",
   attachments: [{
-      "fallback": "Help Channel Update",
+      "fallback": "Clay has been Released",
       "color": "#36a64f",
-      "pretext": "We just relased our code, please clear cache and refresh to fix edit mode",
+      "pretext": "If you are seeing editing issues please clear your cache and refresh. If you've tried that and are still experiencing issues please @dev in the Help channel.",
       "author_name": "Nymag Developers",
-      // "author_link": "Link to Dev channel",
-      // "author_icon": "Custom clay icon",
-      "title": "Chrome Cache Extension",
+      "title": "Chrome Clear Cache Extension",
       "title_link": "https://chrome.google.com/webstore/detail/clear-cache/fkpampcchocandlbgdffjaihmccjmlgk?hl=en",
-      "text": "Use this link to clear cache",
-      "fields": [
-          {
-              "title": "Priority",
-              "value": "High",
-              "short": false
-          }
-      ],
-      // "image_url": "NYMAG url",
-      // "thumb_url": "nymag url",
+      "text": "Download here if you dont have the clear cache extension",
       "footer": "Nymag Developers",
       "footer_icon": "https://platform.slack-edge.com/img/default_application_icon.png",
-      // "ts": 123456789
   }]
 }
 
